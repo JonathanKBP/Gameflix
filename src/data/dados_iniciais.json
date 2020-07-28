@@ -5,8 +5,8 @@
       "link": "https://www.youtube.com/watch?v=MPDmnIKI75U",
       "cor": "#011184",
       "link_extra": {
-        "text": "Jogos do gênero battle royale",
-        "url": ""
+        "text": "Jogos do gênero battle royale"
+
       },
       "videos": [
         {
@@ -43,8 +43,7 @@
       "titulo": "Lançamentos",
       "cor": "#008600",
       "link_extra": {
-        "text": "Lançamentos de jogos",
-        "url": ""
+        "text": "Lançamentos de jogos"
       },
       "videos": [
         {
@@ -73,8 +72,7 @@
       "titulo": "Atualizados",
       "cor": "#ff00bc",
       "link_extra": {
-        "text": "Jogos atualizados",
-        "url": ""
+        "text": "Jogos atualizados"
       },
       "videos": [
         {
@@ -98,6 +96,9 @@
     {
       "titulo": "Gameplay",
       "cor": "orange",
+      "link_extra": {
+        "text": "Gameplays"
+      },
       "videos": [
         {
           "titulo": "The last of us 2",
@@ -121,8 +122,7 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Jogos diversos",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Jogos diversos"
       },
       "videos": [
         {
@@ -151,8 +151,7 @@
       "titulo": "Filmes",
       "cor": "#6b5be2",
       "link_extra": {
-        "text": "Filmes baseados em jogos",
-        "url": ""
+        "text": "Filmes baseados em jogos"
       },
       "videos": [
         {

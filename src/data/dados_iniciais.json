@@ -1,0 +1,173 @@
+{
+  "categorias": [
+    {
+      "titulo": "Battle Royale",
+      "link": "https://www.youtube.com/watch?v=MPDmnIKI75U",
+      "cor": "#011184",
+      "link_extra": {
+        "text": "Jogos do gênero battle royale",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Capítulo 2: Temporada 3 do Fortnite - Tire Onda",
+          "url": "https://www.youtube.com/watch?v=MPDmnIKI75U"
+        },
+        {
+          "titulo": "Jetpack + Espingarda de combate = Roubada",
+          "url": "https://www.youtube.com/watch?v=Md72Cfs_zYs"
+        },
+        {
+          "titulo": "Fortnite best moments",
+          "url": "https://www.youtube.com/watch?v=ZBxLL99BypM"
+        },
+        {
+          "titulo": "Dom Pisante Chegou",
+          "url": "https://www.youtube.com/watch?v=S8HEpnN25jY"
+        },
+        {
+          "titulo": "Ganhei uma roupa exclusiva do modo vingança",
+          "url": "https://www.youtube.com/watch?v=HKKO5XyZRWA"
+        },
+        {
+          "titulo": "Ele quase me matou | PUBG MOBILE",
+          "url": "https://www.youtube.com/watch?v=2u-8PZlR1X8"
+        },
+        {
+          "titulo": "Fui carregado por um võvô",
+          "url": "https://www.youtube.com/watch?v=zJuafcOOuiE"
+        }      
+      ]
+    },
+    {
+      "titulo": "Lançamentos",
+      "cor": "#008600",
+      "link_extra": {
+        "text": "Lançamentos de jogos",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Cyberpunk 2077",
+          "url": "https://www.youtube.com/watch?v=LembwKDo1Dk"
+        },
+        {
+          "titulo": "Final Fantasy VII Remake",
+          "url": "https://www.youtube.com/watch?v=ERgrFVhL-n4"
+        },
+        {
+          "titulo": "The Last Of Us",
+          "url": "https://www.youtube.com/watch?v=kE7li_u1nmg"
+        },
+        {
+          "titulo": "Animal Crossing",
+          "url": "https://www.youtube.com/watch?v=_3YNL0OWio0"
+        }, 
+        {
+          "titulo": "DOOM Eternal",
+          "url": "https://www.youtube.com/watch?v=FkklG9MA0vM"
+        }
+      ]
+    },
+    {
+      "titulo": "Atualizados",
+      "cor": "#ff00bc",
+      "link_extra": {
+        "text": "Jogos atualizados",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Announcement Trailer | PS5",
+          "url": "https://www.youtube.com/watch?v=P20ASB1MdnI&has_verified=1"
+        },
+        {
+          "titulo": "Red Dead Redemption 2 Trailer",
+          "url": "https://www.youtube.com/watch?v=gmA6MrX81z4"
+        },
+        {
+          "titulo": "Call of Duty",
+          "url": "https://www.youtube.com/watch?v=x993FRC4rXA"
+        },
+        {
+          "titulo": "Marvel's Spider-Man",
+          "url": "https://www.youtube.com/watch?v=gHzuHo80U2M"
+        }
+      ]
+    },
+    {
+      "titulo": "Gameplay",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "The last of us 2",
+          "url": "https://www.youtube.com/watch?v=s9y8MIKxnbY"
+        },
+        {
+          "titulo": "Death Stranding",
+          "url": "https://www.youtube.com/watch?v=tMs35kRNGbo"
+        },
+        {
+          "titulo": "Days Gone",
+          "url": "https://www.youtube.com/watch?v=lfZACRWygPo"
+        },
+        {
+          "titulo": "Ghost of tsushima",
+          "url": "https://www.youtube.com/watch?v=7dcC8xHGEIQ"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Jogos diversos",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Filmes baseados em jogos",
+        "url": ""
+      },
+      "videos": [
+        {
+          "titulo": "Assassin's Creed",
+          "url": "https://www.youtube.com/watch?v=kVIQ6RzIGAA"
+        },
+        {
+          "titulo": "Resident Evil 6",
+          "url": "https://www.youtube.com/watch?v=JU5vjMEk9BU"
+        },
+        {
+          "titulo": "Tomb Raider",
+          "url": "https://www.youtube.com/watch?v=hs1FinK2O5M"
+        }      
+      ]
+    }
+  ]
+}

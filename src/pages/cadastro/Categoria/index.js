@@ -4,7 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 
 function CadastroCategoria(){
   return(
-    <PageDefault>
+    <PageDefault >
       <h1>Cadastro de Categoria</h1>
 
     <Link to="/">

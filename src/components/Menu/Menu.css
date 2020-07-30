@@ -46,6 +46,7 @@ body {
 
 .ButtonLink {
   color: var(--white);
+  background-color: var(--black);
   border: 1px solid var(--white);
   box-sizing: border-box;
   cursor: pointer;
@@ -58,7 +59,7 @@ body {
   text-decoration: none;
   display: inline-block;
   transition-property: border, color;
-  transition-duration: 2s;
+  transition-duration: 0.3s;
 }
 .ButtonLink:hover,
 .ButtonLink:focus {
@@ -76,11 +77,9 @@ body {
     border-radius: 0;
     border: 0;
     text-align: center;
-    transition: opacity .3s;
   }
   .ButtonLink:hover,
   .ButtonLink:focus {
-    opacity: .5;
     color: white !important;
   }
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from '../../assets/img/logoGameflix.png'
 import './Menu.css';
 import { Link } from 'react-router-dom';
-//import ButtonLink from './components/ButtonLink'
 import Button from '../Button';
 
 function Menu() {

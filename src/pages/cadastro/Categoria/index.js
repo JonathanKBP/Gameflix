@@ -39,7 +39,7 @@ function CadastroCategoria() {
   useEffect(() => {
     const URL_DB = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
-      : 'https://gameflix-kevin.herokuapp.com/categorias';
+      : '';
 
     fetch(URL_DB)
       .then(async (serverDados) => {

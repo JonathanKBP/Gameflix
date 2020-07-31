@@ -1,3 +1,4 @@
+  
 const jsonServer = require('json-server');
 
 const server = jsonServer.create();
@@ -12,4 +13,3 @@ server.listen(port, () => {
   // eslint-disable-next-line no-console
   console.log(`JSON Server is running in ${port}`);
 });
-© 2020 GitHub, Inc.

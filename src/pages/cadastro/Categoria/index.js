@@ -8,56 +8,54 @@ function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '',
+    cor: '#212121',
   };
-  const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
 
-  function setValue(chave, valor) {
+  const [values, setValues] = useState(valoresIniciais);
+  const [categorias, setCategorias] = useState([]); // Valores iniciais para teste
+
+  function setValue(key, value) {
     setValues({
       ...values,
-      [chave]: valor,
+      [key]: value,
     });
   }
 
-  function handleChange(parms) {
-    setValue(
-      parms.target.getAttribute('name'),
-      parms.target.value,
-    );
+  function handleChange(evento) {
+    setValue(evento.target.getAttribute('name'), evento.target.value);
+  }
+
+  function handleSubmit(evento) {
+    evento.preventDefault();
+
+    setCategorias([
+      ...categorias,
+      values,
+    ]);
+
+    setValues(valoresIniciais);
   }
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
+    const URL_DB = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
-      : 'https://gameflix-kevin.herokuapp.com/';
-    fetch(URL)
-      .then(async (response) => {
-        if (response.ok) {
-          const result = await response.json();
-          setCategorias(result);
-          return;
-        }
-        throw new Error('Não foi possível pegar os dados');
+      : 'https://gameflix-kevin.herokuapp.com/categorias';
+
+    fetch(URL_DB)
+      .then(async (serverDados) => {
+        const dados = await serverDados.json();
+        setCategorias([
+          ...dados,
+        ]);
       });
   }, []);
 
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria:&nbsp;
-        {values.nome}
-      </h1>
 
-      <form onSubmit={function handleSubmit(params) {
-        params.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-        setValues(valoresIniciais);
-      }}
-      >
+      <h1>Cadastro de categoria</h1>
+
+      <form onSubmit={handleSubmit}>
 
         <FormField
           label="Nome da Categoria"
@@ -68,6 +66,7 @@ function CadastroCategoria() {
         />
 
         <FormField
+          as="textarea"
           label="Descrição"
           type="textarea"
           name="descricao"
@@ -86,22 +85,30 @@ function CadastroCategoria() {
         <Button>
           Cadastrar
         </Button>
-
-        <ul>
-          {categorias.map((categoria) => (
-            <li key={`${categoria.titulo}`}>
-              {categoria.titulo}
-            </li>
-          ))}
-        </ul>
-
       </form>
-      <Button to="/">
-        Ir para Home
-      </Button>
+
+      {categorias.lenght === 0 && (
+        <div>
+          <p style={{ padding: '5px 0' }}>
+            Carregando categorias...
+          </p>
+        </div>
+      )}
+
+      <ul>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`} style={{ color: categoria.cor }}>
+            {categoria.nome}
+            {' - '}
+            {categoria.descricao}
+          </li>
+        ))}
+      </ul>
+
+      <Link to="/">Ir para Home</Link>
 
     </PageDefault>
-  )
+  );
 }
 
 export default CadastroCategoria;

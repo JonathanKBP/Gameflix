@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import './Index.css';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -105,7 +106,7 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Link to="/">Ir para Home</Link>
+      <Button className="button" as={Link} to="/">Ir para Home</Button>
 
     </PageDefault>
   );

@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "json-server": "^0.16.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "server": "node ./server.js",
-    "dev": "concurrently \"react-scripts start\" \"npm run server\"",
+    "dev": "react-scripts start",
     "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",

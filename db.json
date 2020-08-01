@@ -2,20 +2,20 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "FPS",
-      "descricao": "Jogos de tiro",
+      "nome": "Battle Royale",
+      "descricao": "Jogos do gênero battle royale",
       "cor": "#6B5BE2"
     },
     {
       "id": 2,
-      "nome": "RPG",
-      "descricao": "Jogos do estilo MMORPG",
+      "nome": "Lançamentos",
+      "descricao": "Lançamentos de jogos",
       "cor": "#FFBA05"
     },
     {
       "id": 3,
-      "nome": "Aventura",
-      "descricao": "Jogos de aventura",
+      "nome": "Atualizados",
+      "descricao": "Jogos atualizados",
       "cor": "#2A7AE4"
     },
     {
@@ -26,9 +26,185 @@
     },
     {
       "id": 5,
-      "nome": "Ação",
-      "descricao": "Jogos de ação",
+      "nome": "Games",
+      "descricao": "Jogos diversos",
       "cor": "#DC6EBE"
+    },
+    {
+      "id": 6,
+      "nome": "Filmes",
+      "descricao": "Filmes baseados em jogos",
+      "cor": "#DC6EBE"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Capítulo 2: Temporada 3 do Fortnite - Tire Onda",
+      "url": "https://www.youtube.com/watch?v=MPDmnIKI75U"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Jetpack + Espingarda de combate = Roubada",
+      "url": "https://www.youtube.com/watch?v=Md72Cfs_zYs"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Fortnite best moments",
+      "url": "https://www.youtube.com/watch?v=ZBxLL99BypM"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Dom Pisante Chegou",
+      "url": "https://www.youtube.com/watch?v=S8HEpnN25jY"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Ganhei uma roupa exclusiva do modo vingança",
+      "url": "https://www.youtube.com/watch?v=HKKO5XyZRWA"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Ele quase me matou | PUBG MOBILE",
+      "url": "https://www.youtube.com/watch?v=2u-8PZlR1X8"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Fui carregado por um vôvô",
+      "url": "https://www.youtube.com/watch?v=zJuafcOOuiE"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "Cyberpunk 2077",
+      "url": "https://www.youtube.com/watch?v=LembwKDo1Dk"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Final Fantasy VII Remake",
+      "url": "https://www.youtube.com/watch?v=ERgrFVhL-n4"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "The Last Of Us",
+      "url": "https://www.youtube.com/watch?v=kE7li_u1nmg"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Animal Crossing",
+      "url": "https://www.youtube.com/watch?v=_3YNL0OWio0"
+    }, 
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "DOOM Eternal",
+      "url": "https://www.youtube.com/watch?v=FkklG9MA0vM"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Announcement Trailer | PS5",
+      "url": "https://www.youtube.com/watch?v=P20ASB1MdnI&has_verified=1"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Red Dead Redemption 2 Trailer",
+      "url": "https://www.youtube.com/watch?v=gmA6MrX81z4"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "Call of Duty",
+      "url": "https://www.youtube.com/watch?v=x993FRC4rXA"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Marvel's Spider-Man",
+      "url": "https://www.youtube.com/watch?v=gHzuHo80U2M"
+    },
+    {
+      "id": 14,
+      "categoriaId": 4,
+      "titulo": "The last of us 2",
+      "url": "https://www.youtube.com/watch?v=s9y8MIKxnbY"
+    },
+    {
+      "id": 15,
+      "categoriaId": 4,
+      "titulo": "Death Stranding",
+      "url": "https://www.youtube.com/watch?v=tMs35kRNGbo"
+    },
+    {
+      "id": 16,
+      "categoriaId": 4,
+      "titulo": "Days Gone",
+      "url": "https://www.youtube.com/watch?v=lfZACRWygPo"
+    },
+    {
+      "id": 17,
+      "categoriaId": 4,
+      "titulo": "Ghost of tsushima",
+      "url": "https://www.youtube.com/watch?v=7dcC8xHGEIQ"
+    },
+    {
+      "id": 15,
+      "categoriaId": 5,
+      "titulo": "Final Fantasy 7",
+      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+    },
+    {
+      "id": 16,
+      "categoriaId": 5,
+      "titulo": "Assassins Creed Valhalla",
+      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+    },
+    {
+      "id": 17,
+      "categoriaId": 5,
+      "titulo": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+    },
+    {
+      "id": 18,
+      "categoriaId": 5,
+      "titulo": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "id": 19,
+      "categoriaId": 5,
+      "titulo": "Pokémon Let's Go Pikachu/Eevee",
+      "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+    },
+    {
+      "id": 20,
+      "categoriaId": 6,
+      "titulo": "Assassin's Creed",
+      "url": "https://www.youtube.com/watch?v=kVIQ6RzIGAA"
+    },
+    {
+      "id": 21,
+      "categoriaId": 6,
+      "titulo": "Resident Evil 6",
+      "url": "https://www.youtube.com/watch?v=JU5vjMEk9BU"
+    },
+    {
+      "id": 22,
+      "categoriaId": 6,
+      "titulo": "Tomb Raider",
+      "url": "https://www.youtube.com/watch?v=hs1FinK2O5M"
     }
   ]
 }

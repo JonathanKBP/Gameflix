@@ -1,65 +1,55 @@
+/* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import PageDefault from '../../../components/PageDefault';
+import PagerDefaut from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
-import './Index.css';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '#212121',
+    cor: '',
   };
 
-  const [values, setValues] = useState(valoresIniciais);
-  const [categorias, setCategorias] = useState([]); // Valores iniciais para teste
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(evento) {
-    setValue(evento.target.getAttribute('name'), evento.target.value);
-  }
-
-  function handleSubmit(evento) {
-    evento.preventDefault();
-
-    setCategorias([
-      ...categorias,
-      values,
-    ]);
-
-    setValues(valoresIniciais);
-  }
+  const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL_DB = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias/'
       : 'https://gameflix-kevin.herokuapp.com/categorias';
 
-    fetch(URL_DB)
-      .then(async (serverDados) => {
-        const dados = await serverDados.json();
+    fetch(URL)
+      .then(async (ServResponse) => {
+        const response = await ServResponse.json();
         setCategorias([
-          ...dados,
+          ...response,
         ]);
       });
   }, []);
 
   return (
-    <PageDefault>
+    // eslint-disable-next-line react/jsx-filename-extension
+    <PagerDefaut>
+      <h1>
+        Cadastro de Categoria:
+        {values.nome}
+      </h1>
 
-      <h1>Cadastro de categoria</h1>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        setCategorias([
+          ...categorias,
+          values,
+        ]);
 
-      <form onSubmit={handleSubmit}>
-
+        clearForm();
+      }}
+      >
         <FormField
-          label="Nome da Categoria"
+          label="Nome"
           type="text"
           name="nome"
           value={values.nome}
@@ -67,10 +57,10 @@ function CadastroCategoria() {
         />
 
         <FormField
-          as="textarea"
           label="Descrição"
           type="textarea"
           name="descricao"
+          id="descricaoCategoria"
           value={values.descricao}
           onChange={handleChange}
         />
@@ -83,32 +73,30 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <button type="submit">
           Cadastrar
-        </Button>
+        </button>
+
       </form>
 
-      {categorias.lenght === 0 && (
+      {categorias.length === 0 && (
         <div>
-          <p style={{ padding: '5px 0' }}>
-            Carregando categorias...
-          </p>
+          Loading...
         </div>
       )}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`} style={{ color: categoria.cor }}>
-            {categoria.nome}
-            {' - '}
-            {categoria.descricao}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
 
-      <Button className="button" as={Link} to="/">Ir para Home</Button>
-
-    </PageDefault>
+      <Link to="/">
+        Home
+      </Link>
+    </PagerDefaut>
   );
 }
 

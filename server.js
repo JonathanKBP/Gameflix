@@ -1,4 +1,4 @@
-  
+/* eslint-disable linebreak-style */
 const jsonServer = require('json-server');
 
 const server = jsonServer.create();

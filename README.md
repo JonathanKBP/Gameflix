@@ -17,7 +17,7 @@
   Gameflix é um projeto inspirado na netflix, porém voltado somente para games.
 </p>
 
-[Teste o projeto aqui](https://gameflix-gules.vercel.app/)
+[Teste o projeto clicando aqui](https://gameflix-gules.vercel.app/)
 
 ## **Objetivo**
 Hoje o mundo gamer é bem grande, repleto de conteúdos diversos, e cada vez mais tem novidades para esse público, pensando nisso o gameflix é uma plataforma que concentra todo conteúdo gamer em um lugar, para facilitar a navegação de usuários.
